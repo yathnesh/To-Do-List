@@ -1,0 +1,124 @@
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #120202;
+  }
+  
+  .tab.active {
+    background-color: #ddd;
+    color: #110101;
+  }
+  
+  /* Add Group Button */
+  .add-group-btn {
+    background-color: #120202;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Sidebar Styling */
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 200px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .sidebar ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Task Styling */
+  .task {
+    padding: 15px; /* Increase padding for better visibility */
+    background-color: #f9f9f9; /* Use a slightly lighter background */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 12px; /* Increase margin for spacing between tasks */
+    border: 1px solid #ddd; /* Light border for better separation */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task.completed {
+    /* Light green background for completed tasks */
+    text-decoration: line-through; /* Dim the text color for completed tasks */
+    background-color: #110101;
+    color: #f0f0f0;
+  }
+  
+  .task:hover {
+    background-color: #f0f0f0; /* Slightly darker hover effect */
+  }
+  
+  .task-actions {
+    margin-top: 8px;
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between action buttons */
+  }
+  
+  button {
+    padding: 8px 12px;
+    background-color: #120202;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+    color: #120202;
+  }
+  
+  /* Task-specific button styles */
+  button.edit-btn {
+    background-color: #ffc107;
+  }
+  
+  button.delete-btn {
+    background-color: #cd4d5a;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #dc3545;
+  }
+  

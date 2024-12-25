@@ -1,0 +1,118 @@
+/* Container Styling */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #110101;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #110101;
+  color: #f0f0f0;
+}
+
+/* Slider Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #f0f0f0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Task Styling */
+.task {
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task.completed {
+  background-color: #d3ffd3;  /* Light green for completed tasks */
+  text-decoration: line-through;
+}
+
+.task:hover {
+  background-color: #e4e4e4;
+}
+
+body.dark-mode .task {
+  background-color: #110101;
+  color: #f0f0f0;
+}
+
+body.dark-mode .task.completed {
+  background-color: #110101;
+  color: #f0f0f0;
+}
+
+body.dark-mode .task:hover {
+  background-color: #110101;
+  color: #f0f0f0;
+}
+
+/* Task Actions */
+.task-actions {
+  margin-top: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0b0101;
+}
+
+body.dark-mode button:hover {
+  background-color: #393434;
+}
